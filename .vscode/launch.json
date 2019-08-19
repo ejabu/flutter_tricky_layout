@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "type": "dart",
+            "flutterMode": "debug",
+        },
+        {
+            "name": "Profile",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Release",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Driver : Debug",
+            "request": "launch",
+            "program": "lib/main-driver.dart",
+            "type": "dart",
+            "flutterMode": "debug",
+        },
+        {
+            "name": "Driver : Profile",
+            "request": "launch",
+            "program": "lib/main-driver.dart",
+            "type": "dart",
+            "flutterMode": "profile",
+        },
+    ]
+}
