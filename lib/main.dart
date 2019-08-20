@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tricky_layout/b_screen/image_card_screen.dart';
 
+import 'b_screen/image_card_screen_efficient.dart';
 import 'screen/grid_view_index.dart';
 import 'screen/grid_view_list_view.dart';
 import 'screen/grid_view_list_view_index.dart';
+import 'issue_screen/time_issue.dart';
 
 void main() => runApp(MyApp());
 
@@ -49,6 +52,25 @@ class BaseScreen extends StatelessWidget {
                   ),
                   Dividers(),
                   SizedBox(height: 20),
+                  Dividers(),
+                  ScreenButton(
+                    title: "B-1. Image Cards",
+                    child: ImageCardScreen(),
+                  ),
+                  Dividers(),
+                  ScreenButton(
+                    title: "B-2. Image Cards Efficient",
+                    child: ImageCardScreenEfficient(),
+                  ),
+                  Dividers(),
+                  SizedBox(height: 20),
+                  Dividers(),
+                  ScreenButton(
+                    title: "Time Issue",
+                    subtitle: "the-getter-month-was-called-on-null",
+                    child: TimeIssue(),
+                  ),
+                  Dividers(),
                 ],
               ),
             )
