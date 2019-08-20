@@ -14,6 +14,7 @@ import 'd_screen/animated_container_app.dart';
 import 'e_screen/dropdown_visibility.dart';
 
 import 'f_screen/form_view.dart';
+import 'f_screen/text_field.dart';
 import 'g_screen/timePicker.dart';
 import 'issue_screen/time_issue.dart';
 
@@ -105,6 +106,12 @@ class BaseScreen extends StatelessWidget {
                     title: "F-1. Form View",
                     subtitle: "Adjust Dropdown Field Height",
                     child: FormView(),
+                  ),
+                  Dividers(),
+                  ScreenButton(
+                    title: "F-2. TextFieldScreen",
+                    subtitle: "Check maxLength property",
+                    child: TextFieldScreen(),
                   ),
                   Dividers(),
 
