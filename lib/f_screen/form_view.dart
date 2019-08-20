@@ -7,10 +7,10 @@ class FormView extends StatelessWidget {
       appBar: AppBar(
         title: Text('Screen'),
       ),
-      body: Center(
+      body: SingleChildScrollView( // to handle overflow when keyboard pop
         child: Column(
           children: <Widget>[
-            SizedBox(height: 10,),
+            SizedBox(height: 10),
             Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -71,7 +71,7 @@ class FormView extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 5,),
+            SizedBox(height: 5),
             Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -131,7 +131,7 @@ class FormView extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 5,),
+            SizedBox(height: 5),
             Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
