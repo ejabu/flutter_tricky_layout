@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tricky_layout/b_screen/image_card_screen.dart';
-import 'package:flutter_tricky_layout/c_screen/intrinsic_width_screen.dart';
 
+import 'a_screen/grid_view_index.dart';
+import 'a_screen/grid_view_list_view.dart';
+import 'a_screen/grid_view_list_view_index.dart';
+
+import 'b_screen/image_card_screen.dart';
 import 'b_screen/image_card_screen_efficient.dart';
+
+import 'c_screen/intrinsic_width_screen.dart';
+
 import 'd_screen/animated_container_app.dart';
-import 'screen/grid_view_index.dart';
-import 'screen/grid_view_list_view.dart';
-import 'screen/grid_view_list_view_index.dart';
+
 import 'issue_screen/time_issue.dart';
 
 void main() => runApp(MyApp());
