@@ -14,6 +14,7 @@ import 'd_screen/animated_container_app.dart';
 import 'e_screen/dropdown_visibility.dart';
 
 import 'f_screen/form_view.dart';
+import 'g_screen/timePicker.dart';
 import 'issue_screen/time_issue.dart';
 
 void main() => runApp(MyApp());
@@ -104,6 +105,17 @@ class BaseScreen extends StatelessWidget {
                     title: "F-1. Form View",
                     subtitle: "Adjust Dropdown Field Height",
                     child: FormView(),
+                  ),
+                  Dividers(),
+
+
+
+                  SizedBox(height: 20),
+                  Dividers(),
+                  ScreenButton(
+                    title: "G-1. Time Picker",
+                    subtitle: "Complex Requirement",
+                    child: TimePickerScreen(),
                   ),
                   Dividers(),
 

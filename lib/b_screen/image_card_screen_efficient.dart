@@ -46,9 +46,11 @@ class ImageCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(10.0),
-      child: Image.asset(imagePath),
-    );
+    return imagePath != null
+        ? Container(
+            padding: EdgeInsets.all(10.0),
+            child: Image.asset(imagePath),
+          )
+        : Container();
   }
 }
