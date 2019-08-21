@@ -17,6 +17,7 @@ import 'f_screen/form_view.dart';
 import 'f_screen/text_field_validate.dart';
 import 'f_screen/text_field.dart';
 import 'g_screen/timePicker.dart';
+import 'h_screen/float_bottom_bar.dart';
 import 'issue_screen/time_issue.dart';
 
 void main() => runApp(MyApp());
@@ -130,6 +131,14 @@ class BaseScreen extends StatelessWidget {
                     title: "G-1. Time Picker",
                     subtitle: "Complex Requirement",
                     child: TimePickerScreen(),
+                  ),
+                  Dividers(),
+
+                  SizedBox(height: 20),
+                  Dividers(),
+                  ScreenButton(
+                    title: "H-1. Bottom Bar and Float",
+                    child: FloatBottomBarScreen(),
                   ),
                   Dividers(),
 
