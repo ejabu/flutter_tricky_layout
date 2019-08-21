@@ -13,7 +13,6 @@ class FlexHeaderPageView extends StatelessWidget {
 
   Widget pageView() {
     return PageView(
-      pageSnapping: true,
       children: <Widget>[
         AddTextInput(),
         AddNoteSettings(),
