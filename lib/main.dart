@@ -17,7 +17,10 @@ import 'f_screen/form_view.dart';
 import 'f_screen/text_field_validate.dart';
 import 'f_screen/text_field.dart';
 import 'g_screen/timePicker.dart';
+import 'h_screen/flex_header_page_view.dart';
 import 'h_screen/float_bottom_bar.dart';
+import 'i_screen/google_search_result.dart';
+
 import 'issue_screen/time_issue.dart';
 
 void main() => runApp(MyApp());
@@ -141,6 +144,25 @@ class BaseScreen extends StatelessWidget {
                     child: FloatBottomBarScreen(),
                   ),
                   Dividers(),
+                  ScreenButton(
+                    title: "H-2. FlexHeaderPageView",
+                    child: FlexHeaderPageView(),
+                  ),
+                  Dividers(),
+
+                  SizedBox(height: 20),
+                  Dividers(),
+                  ScreenButton(
+                    title: "I-1. Google Search Result",
+                    subtitle: "Combination Sized Box and Page View",
+                    child: GoogleSearchResult(),
+                  ),
+                  Dividers(),
+                  // ScreenButton(
+                  //   title: "I-2. FlexHeaderPageView",
+                  //   child: FlexHeaderPageView(),
+                  // ),
+                  // Dividers(),
 
 
 
