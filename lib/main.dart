@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'a_screen/grid_view_index.dart';
 import 'a_screen/grid_view_list_view.dart';
 import 'a_screen/grid_view_list_view_index.dart';
+import 'a_screen/grid_view_delta.dart';
 
 import 'b_screen/image_card_screen.dart';
 import 'b_screen/image_card_screen_efficient.dart';
@@ -71,6 +72,11 @@ class BaseScreen extends StatelessWidget {
                     title: "A-3. Grid View List View Index",
                     subtitle: "Special after 6th grid box",
                     child: GridViewListViewIndex(),
+                  ),
+                  Dividers(),
+                  ScreenButton(
+                    title: "A-4. Grid View Delta",
+                    child: GridViewDelta(),
                   ),
                   Dividers(),
                   SizedBox(height: 20),
