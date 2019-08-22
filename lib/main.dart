@@ -8,6 +8,7 @@ import 'b_screen/image_card_screen.dart';
 import 'b_screen/image_card_screen_efficient.dart';
 
 import 'c_screen/intrinsic_width_screen.dart';
+import 'c_screen/static_side_menu.dart';
 
 import 'd_screen/animated_container_app.dart';
 
@@ -84,13 +85,21 @@ class BaseScreen extends StatelessWidget {
                   ),
                   Dividers(),
                   SizedBox(height: 20),
+
                   Dividers(),
                   ScreenButton(
                     title: "C-1. Intrisic Width Usage",
                     child: IntrinsicWidthScreen(),
                   ),
                   Dividers(),
+                  Dividers(),
+                  ScreenButton(
+                    title: "C-2. Static Side Menu",
+                    child: StaticSideMenu(),
+                  ),
+                  Dividers(),
                   SizedBox(height: 20),
+
                   Dividers(),
                   ScreenButton(
                     title: "D-1. Animated Container",
