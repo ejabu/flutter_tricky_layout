@@ -12,6 +12,7 @@ import 'c_screen/static_side_menu.dart';
 
 import 'd_screen/animated_container_app.dart';
 
+import 'e_screen/dropdown_url.dart';
 import 'e_screen/dropdown_visibility.dart';
 
 import 'f_screen/form_view.dart';
@@ -114,6 +115,12 @@ class BaseScreen extends StatelessWidget {
                   ScreenButton(
                     title: "E-1. Dropdown Visibility",
                     child: DropdownScreen(),
+                  ),
+                  Dividers(),
+                  Dividers(),
+                  ScreenButton(
+                    title: "E-2. Dropdown Url",
+                    child: DropDown(),
                   ),
                   Dividers(),
 
