@@ -8,6 +8,7 @@ import 'a_screen/grid_view_delta.dart';
 import 'b_screen/image_card_screen.dart';
 import 'b_screen/image_card_screen_efficient.dart';
 
+import 'b_screen/image_card_store.dart';
 import 'c_screen/intrinsic_width_screen.dart';
 import 'c_screen/static_side_menu.dart';
 
@@ -80,15 +81,24 @@ class BaseScreen extends StatelessWidget {
                   ),
                   Dividers(),
                   SizedBox(height: 20),
+
                   Dividers(),
                   ScreenButton(
                     title: "B-1. Image Cards",
+                    subtitle: "'Inefficient' way to render multiple image",
                     child: ImageCardScreen(),
                   ),
                   Dividers(),
                   ScreenButton(
                     title: "B-2. Image Cards Efficient",
+                    subtitle: "Add Business Logic chosing image to display",
                     child: ImageCardScreenEfficient(),
+                  ),
+                  Dividers(),
+                  ScreenButton(
+                    title: "B-3. Image Cards - Read from Class",
+                    subtitle: "Loop through List<String> properties",
+                    child: ImageCardStore(),
                   ),
                   Dividers(),
                   SizedBox(height: 20),
