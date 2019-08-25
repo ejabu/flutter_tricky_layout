@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "Tricky Layouts",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+            "**/.dart_tool": true,
+            "**/.build": true,
+            "**/.idea": true,
+            "**/.metadata": true,
+            "**/.packages": true,
+            "*.iml": true,
+            "**/*.iml": true,
+            "**/*.gradle": true,
+            "**/android": true,
+            "**/ios": true,
+            ".flutter-plugins": true,
+            "pubspec.lock": true
+        },
+	}
+}
