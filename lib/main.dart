@@ -9,6 +9,7 @@ import 'b_screen/image_card_screen.dart';
 import 'b_screen/image_card_screen_efficient.dart';
 
 import 'b_screen/image_card_store.dart';
+import 'b_screen/image_card_store_update.dart';
 import 'c_screen/intrinsic_width_screen.dart';
 import 'c_screen/static_side_menu.dart';
 
@@ -100,6 +101,12 @@ class BaseScreen extends StatelessWidget {
                     title: "B-3. Image Cards - Read from Class",
                     subtitle: "Loop through List<String> properties",
                     child: ImageCardStore(),
+                  ),
+                  Dividers(),
+                  ScreenButton(
+                    title: "B-4. Image Cards - Updated",
+                    subtitle: "Loop through List<String> properties",
+                    child: RestaurantPage(),
                   ),
                   Dividers(),
                   SizedBox(height: 20),
