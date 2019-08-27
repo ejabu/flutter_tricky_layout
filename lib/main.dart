@@ -14,6 +14,8 @@ import 'c_screen/intrinsic_width_screen.dart';
 import 'c_screen/static_side_menu.dart';
 
 import 'd_screen/animated_container_app.dart';
+import 'd_screen/builder_auto.dart';
+import 'd_screen/builder_manual.dart';
 
 import 'e_screen/dropdown_url.dart';
 import 'e_screen/dropdown_visibility.dart';
@@ -124,12 +126,24 @@ class BaseScreen extends StatelessWidget {
                     child: StaticSideMenu(),
                   ),
                   Dividers(),
-                  SizedBox(height: 20),
 
+                  SizedBox(height: 20),
                   Dividers(),
                   ScreenButton(
                     title: "D-1. Animated Container",
                     child: AnimatedContainerApp(),
+                  ),
+                  Dividers(),
+                  ScreenButton(
+                    title: "D-2. Auto Animation",
+                    subtitle: "Animated builder auto triggered",
+                    child: BuilderAuto(),
+                  ),
+                  Dividers(),
+                  ScreenButton(
+                    title: "D-3. Manual Animation",
+                    subtitle: "Animated builder *button* triggered",
+                    child: BuilderManual(),
                   ),
                   Dividers(),
 
