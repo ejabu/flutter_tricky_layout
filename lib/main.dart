@@ -36,12 +36,15 @@ import 'issue_screen/time_issue.dart';
 import 'j_screen/callback_screen.dart';
 import 'k_screen/post_frame.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home: BaseScreen(),
     );
