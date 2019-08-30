@@ -17,6 +17,7 @@ import 'd_screen/animated_container_app.dart';
 import 'd_screen/builder_auto.dart';
 import 'd_screen/builder_manual.dart';
 
+import 'e_screen/dropdown_sql_init.dart';
 import 'e_screen/dropdown_url.dart';
 import 'e_screen/dropdown_visibility.dart';
 
@@ -152,15 +153,23 @@ class BaseScreen extends StatelessWidget {
 
                   SizedBox(height: 20),
                   Dividers(),
+                  
                   ScreenButton(
                     title: "E-1. Dropdown Visibility",
                     child: DropdownScreen(),
                   ),
                   Dividers(),
-                  Dividers(),
+                  
                   ScreenButton(
                     title: "E-2. Dropdown Url",
                     child: DropDown(),
+                  ),
+                  Dividers(),
+                  
+                  ScreenButton(
+                    title: "E-3. Dropdown SQL Init",
+                    subtitle: "Init dropdown Selection based on SQL Data",
+                    child: SqliteDropdown(),
                   ),
                   Dividers(),
 
