@@ -23,8 +23,9 @@ DropdownButton<UserModel>(
 
 ## 2. Dropdown will re-init multiple times if wrapped in FutureBuilder
 
-But if we pick one options, Dropdown will modify _currentUser in StatefulWidget.
-Therefore, by triggering `setState`, flutter will trigger `build` method once more.
+The problem occurs after we pick one options. Dropdown will modify _currentUser in StatefulWidget and execute `setState`.
+
+**By triggering `setState`, by default, Flutter widget will trigger `build` method once more.**
 
 
 ``` dart
@@ -110,9 +111,9 @@ _screenStage == "loaded"
 
 ----------
 
-## Full Code
+## Fully working code
 
-
+You can check it in this [Github Repo](https://github.com/ejabu/flutter_tricky_layout/blob/master/lib/e_screen/dropdown_sql_init.dart)
 
   [1]: https://i.stack.imgur.com/Wa12N.gif
 
