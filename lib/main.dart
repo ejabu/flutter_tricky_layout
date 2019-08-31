@@ -38,6 +38,8 @@ import 'j_screen/callback_screen.dart';
 import 'j_screen/simple_callback.dart';
 import 'k_screen/post_frame.dart';
 import 'l_screen/list_view_complex.dart';
+import 'm_screen/popup_dynamic.dart';
+import 'n_screen/will_pop_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -265,6 +267,24 @@ class BaseScreen extends StatelessWidget {
                     title: "L - List View",
                     subtitle: "Chaining Build Executions",
                     child: ListViewComplex(),
+                  ),
+                  Dividers(),
+
+                  SizedBox(height: 20),
+                  Dividers(),
+                  ScreenButton(
+                    title: "M - Popup Menu Button",
+                    subtitle: "Dynamic Selection",
+                    child: PopupDynamic(),
+                  ),
+                  Dividers(),
+
+                  SizedBox(height: 20),
+                  Dividers(),
+                  ScreenButton(
+                    title: "N - Will Pop",
+                    subtitle: "Execute method when Closing Page",
+                    child: WillPopScreen(),
                   ),
                   Dividers(),
 
